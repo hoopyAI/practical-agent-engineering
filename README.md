@@ -17,35 +17,43 @@ Most "awesome" lists give you 200 links and no direction. This guide gives you:
 ## Learning Map
 
 ```mermaid
-graph TD
-    START["🏗️ Build an Agent from Scratch<br/><i>learn-claude-code · Nanobot</i>"]
+flowchart LR
+    subgraph FOUNDATION [" "]
+        direction TB
+        S(("START")):::start
+        S --> A["Architecture\nPatterns"]:::found
+        S --> B["Context\nEngineering"]:::found
+    end
 
-    START --> ARCH["Architecture Patterns<br/><small>ReAct · Plan-Execute · Reflection</small>"]
-    START --> CTX["Context Engineering<br/><small>Memory · Token Budgets · RAG</small>"]
+    subgraph BUILD [" "]
+        direction TB
+        C["Multi-Agent\nPatterns"]:::mid
+        D["Security &\nSandboxing"]:::mid
+    end
 
-    ARCH --> MULTI["Multi-Agent Patterns<br/><small>Subagent · Pipeline · Swarm · Teams</small>"]
-    CTX --> MULTI
+    subgraph SHIP [" "]
+        direction TB
+        E["Eval &\nObservability"]:::late
+        F["Deployment"]:::ship
+    end
 
-    ARCH --> SEC["Security & Sandboxing<br/><small>OWASP · gVisor · HITL/HOTL</small>"]
+    A --> C
+    B --> C
+    A --> D
+    C --> E
+    D --> E
+    E --> F
 
-    MULTI --> EVAL["Evaluation & Observability<br/><small>Evals · Tracing · Cost Monitoring</small>"]
-    SEC --> EVAL
+    classDef start fill:#1e1b4b,color:#c7d2fe,stroke:#4f46e5,stroke-width:2px
+    classDef found fill:#1e3a5f,color:#bae6fd,stroke:#0ea5e9,stroke-width:2px
+    classDef mid fill:#2e1065,color:#ddd6fe,stroke:#8b5cf6,stroke-width:2px
+    classDef late fill:#451a03,color:#fde68a,stroke:#f59e0b,stroke-width:2px
+    classDef ship fill:#064e3b,color:#a7f3d0,stroke:#10b981,stroke-width:2px
 
-    EVAL --> DEPLOY["Deployment<br/><small>Docker · Platforms · vLLM · Routing</small>"]
-
-    style START fill:#4f46e5,color:#fff,stroke:none
-    style ARCH fill:#0ea5e9,color:#fff,stroke:none
-    style CTX fill:#0ea5e9,color:#fff,stroke:none
-    style MULTI fill:#8b5cf6,color:#fff,stroke:none
-    style SEC fill:#8b5cf6,color:#fff,stroke:none
-    style EVAL fill:#f59e0b,color:#fff,stroke:none
-    style DEPLOY fill:#10b981,color:#fff,stroke:none
+    style FOUNDATION fill:none,stroke:#0ea5e9,stroke-width:1px,stroke-dasharray:5 5,color:#64748b
+    style BUILD fill:none,stroke:#8b5cf6,stroke-width:1px,stroke-dasharray:5 5,color:#64748b
+    style SHIP fill:none,stroke:#f59e0b,stroke-width:1px,stroke-dasharray:5 5,color:#64748b
 ```
-
-> **Blue** = learn early, builds foundation.
-> **Purple** = learn next, needs architecture + context basics.
-> **Yellow** = learn after you have something to evaluate.
-> **Green** = learn when you're ready to ship.
 
 ## Learning Strategy
 
@@ -81,30 +89,14 @@ Two projects that teach you everything at once:
 | [Langfuse](https://langfuse.com) | Eval + observability (open source) | [Docs](https://langfuse.com/docs) |
 | [DeepEval](https://deepeval.com) | Local eval + CI/CD | [Docs](https://docs.confident-ai.com/) |
 
-## What You'll Build
+## Timeline
 
-```mermaid
-graph LR
-    subgraph "Month 1-2"
-        A["📖 learn-claude-code<br/>12 lessons"] --> B["🔧 Your first<br/>multi-agent pipeline"]
-    end
-
-    subgraph "Month 3-4"
-        B --> C["🧪 Eval framework<br/>for your agent"]
-        B --> D["🔒 Sandbox +<br/>permission model"]
-    end
-
-    subgraph "Month 5-6"
-        C --> E["🚀 Deployed agent<br/>with monitoring"]
-        D --> E
-    end
-
-    style A fill:#e0e7ff,stroke:#4f46e5
-    style B fill:#e0e7ff,stroke:#4f46e5
-    style C fill:#fef3c7,stroke:#f59e0b
-    style D fill:#fef3c7,stroke:#f59e0b
-    style E fill:#d1fae5,stroke:#10b981
-```
+| Month | What You're Doing | What You'll Have |
+|-------|------------------|-----------------|
+| **1-2** | learn-claude-code + Nanobot | Understanding of agent internals |
+| **2-3** | Architecture deep dive + LangGraph | Your first multi-agent pipeline |
+| **3-4** | Security + Eval | Sandbox, permission model, automated evals |
+| **5-6** | Deployment + Observability | A deployed agent with monitoring and cost tracking |
 
 ## Who This Is For
 
