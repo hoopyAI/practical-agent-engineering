@@ -17,43 +17,25 @@ Most "awesome" lists give you 200 links and no direction. This guide gives you:
 ## Learning Map
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '14px', 'fontFamily': 'Georgia, serif', 'lineColor': '#94a3b8', 'primaryColor': '#f8fafc', 'primaryBorderColor': '#cbd5e1' }}}%%
+
 flowchart LR
-    subgraph FOUNDATION [" "]
-        direction TB
-        S(("START")):::start
-        S --> A["Architecture\nPatterns"]:::found
-        S --> B["Context\nEngineering"]:::found
-    end
-
-    subgraph BUILD [" "]
-        direction TB
-        C["Multi-Agent\nPatterns"]:::mid
-        D["Security &\nSandboxing"]:::mid
-    end
-
-    subgraph SHIP [" "]
-        direction TB
-        E["Eval &\nObservability"]:::late
-        F["Deployment"]:::ship
-    end
-
-    A --> C
+    S((" ")):::dot --> A["Architecture\nPatterns"]:::node
+    S --> B["Context\nEngineering"]:::node
+    A --> C["Multi-Agent"]:::node
     B --> C
-    A --> D
-    C --> E
+    A --> D["Security"]:::node
+    C --> E["Eval &\nObservability"]:::node
     D --> E
-    E --> F
+    E --> F["Deployment"]:::node
 
-    classDef start fill:#1e1b4b,color:#c7d2fe,stroke:#4f46e5,stroke-width:2px
-    classDef found fill:#1e3a5f,color:#bae6fd,stroke:#0ea5e9,stroke-width:2px
-    classDef mid fill:#2e1065,color:#ddd6fe,stroke:#8b5cf6,stroke-width:2px
-    classDef late fill:#451a03,color:#fde68a,stroke:#f59e0b,stroke-width:2px
-    classDef ship fill:#064e3b,color:#a7f3d0,stroke:#10b981,stroke-width:2px
+    classDef dot fill:#475569,stroke:#475569,color:#475569
+    classDef node fill:#f8fafc,stroke:#e2e8f0,stroke-width:1.5px,color:#1e293b
 
-    style FOUNDATION fill:none,stroke:#0ea5e9,stroke-width:1px,stroke-dasharray:5 5,color:#64748b
-    style BUILD fill:none,stroke:#8b5cf6,stroke-width:1px,stroke-dasharray:5 5,color:#64748b
-    style SHIP fill:none,stroke:#f59e0b,stroke-width:1px,stroke-dasharray:5 5,color:#64748b
+    linkStyle default stroke:#cbd5e1,stroke-width:1.5px
 ```
+
+> `START` ➜ Architecture & Context ➜ Multi-Agent & Security ➜ Eval ➜ Deploy
 
 ## Learning Strategy
 
