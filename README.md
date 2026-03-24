@@ -14,6 +14,39 @@ Most "awesome" lists give you 200 links and no direction. This guide gives you:
 - **Practice plans** — concrete exercises, not just reading lists
 - **Architecture-first thinking** — patterns before frameworks
 
+## Learning Map
+
+```mermaid
+graph TD
+    START["🏗️ Build an Agent from Scratch<br/><i>learn-claude-code · Nanobot</i>"]
+
+    START --> ARCH["Architecture Patterns<br/><small>ReAct · Plan-Execute · Reflection</small>"]
+    START --> CTX["Context Engineering<br/><small>Memory · Token Budgets · RAG</small>"]
+
+    ARCH --> MULTI["Multi-Agent Patterns<br/><small>Subagent · Pipeline · Swarm · Teams</small>"]
+    CTX --> MULTI
+
+    ARCH --> SEC["Security & Sandboxing<br/><small>OWASP · gVisor · HITL/HOTL</small>"]
+
+    MULTI --> EVAL["Evaluation & Observability<br/><small>Evals · Tracing · Cost Monitoring</small>"]
+    SEC --> EVAL
+
+    EVAL --> DEPLOY["Deployment<br/><small>Docker · Platforms · vLLM · Routing</small>"]
+
+    style START fill:#4f46e5,color:#fff,stroke:none
+    style ARCH fill:#0ea5e9,color:#fff,stroke:none
+    style CTX fill:#0ea5e9,color:#fff,stroke:none
+    style MULTI fill:#8b5cf6,color:#fff,stroke:none
+    style SEC fill:#8b5cf6,color:#fff,stroke:none
+    style EVAL fill:#f59e0b,color:#fff,stroke:none
+    style DEPLOY fill:#10b981,color:#fff,stroke:none
+```
+
+> **Blue** = learn early, builds foundation.
+> **Purple** = learn next, needs architecture + context basics.
+> **Yellow** = learn after you have something to evaluate.
+> **Green** = learn when you're ready to ship.
+
 ## Learning Strategy
 
 **Start with a complete project, then go deep on each skill.**
@@ -47,6 +80,31 @@ Two projects that teach you everything at once:
 | [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/) | Quick prototyping, Swarm/Handoff | [GitHub](https://github.com/openai/openai-agents-python) |
 | [Langfuse](https://langfuse.com) | Eval + observability (open source) | [Docs](https://langfuse.com/docs) |
 | [DeepEval](https://deepeval.com) | Local eval + CI/CD | [Docs](https://docs.confident-ai.com/) |
+
+## What You'll Build
+
+```mermaid
+graph LR
+    subgraph "Month 1-2"
+        A["📖 learn-claude-code<br/>12 lessons"] --> B["🔧 Your first<br/>multi-agent pipeline"]
+    end
+
+    subgraph "Month 3-4"
+        B --> C["🧪 Eval framework<br/>for your agent"]
+        B --> D["🔒 Sandbox +<br/>permission model"]
+    end
+
+    subgraph "Month 5-6"
+        C --> E["🚀 Deployed agent<br/>with monitoring"]
+        D --> E
+    end
+
+    style A fill:#e0e7ff,stroke:#4f46e5
+    style B fill:#e0e7ff,stroke:#4f46e5
+    style C fill:#fef3c7,stroke:#f59e0b
+    style D fill:#fef3c7,stroke:#f59e0b
+    style E fill:#d1fae5,stroke:#10b981
+```
 
 ## Who This Is For
 
