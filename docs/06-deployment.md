@@ -2,13 +2,13 @@
 
 ## Overview
 
-An Agent engineer doesn't need to be a DevOps expert, but does need to be able to deploy Agents to production. Agent deployment is more complex than traditional web apps — long connections, unpredictable costs, sandboxing requirements, and state persistence.
+An Agent engineer doesn't need to be a DevOps expert, but does need to be able to deploy Agents to production. Agent deployment is more involved than traditional web apps because of long connections, unpredictable costs, sandboxing requirements, and state persistence.
 
 ## Deployment Tiers
 
 ### Tier 1: Containerization (Must Learn)
 
-The most fundamental skill — every Agent project should be buildable as a Docker image.
+The most fundamental skill. Every Agent project should be buildable as a Docker image.
 
 ```dockerfile
 FROM node:22-slim
@@ -72,7 +72,7 @@ Core technology PagedAttention reduces 60-80% of VRAM waste. Throughput is 19x h
 
 | Factor | Current State |
 |--------|--------------|
-| **Using Claude/GPT** | API calls are sufficient — no self-hosting needed |
+| **Using Claude/GPT** | API calls are sufficient, no self-hosting needed |
 | **Cost breakeven** | 2M+ tokens per day before self-hosting is worth it |
 | **Ops overhead** | 10-20 hours/month maintenance + GPU costs |
 | **Model quality** | Open-source models in Agent scenarios (tool calling, multi-step reasoning) still lag behind Claude/GPT |
@@ -89,7 +89,7 @@ Core technology PagedAttention reduces 60-80% of VRAM waste. Throughput is 19x h
 
 ### 2026 Trend: Hybrid Routing
 
-The most practical approach is neither "all self-hosted" nor "all API" — it's **intelligent routing**:
+The most practical approach is neither "all self-hosted" nor "all API." It is **intelligent routing**:
 
 ```
 User request -> Router
@@ -131,15 +131,15 @@ Tools like [LiteLLM](https://docs.litellm.ai) and OpenRouter let you switch mode
 | [Deploy Agentic Workflows with K8s + Terraform](https://thenewstack.io/deploy-agentic-ai-workflows-with-kubernetes-and-terraform/) | K8s deployment walkthrough |
 | [Koyeb: Serverless AI Infrastructure 2026](https://www.koyeb.com/blog/serverless-ai-infrastructure-going-into-2026) | Serverless trends |
 | [Deploy AI Apps with Minimal Infrastructure](https://www.runpod.io/articles/guides/deploy-ai-apps-minimal-infrastructure-docker) | Docker minimal deployment |
-| [System Design in 2026: AI-Native and Serverless](https://dev.to/devin-rosario/the-complete-guide-to-system-design-in-2026-ai-native-and-serverless-1kpb) | System design landscape |
+| [System Design in 2026: AI-Native and Serverless](https://dev.to/devin-rosario/the-complete-guide-to-system-design-in-2026-ai-native-and-serverless-1kpb) | System design overview |
 
 ## Practice Plan
 
 ```
 Week 1: Write a Dockerfile for an Agent project; verify it runs locally with docker run
 Week 1: Deploy to Railway or Cloud Run; confirm it's accessible via URL
-Week 2: Add an async task queue — long tasks don't block the HTTP response
-Week 2: Add secret management — no hardcoded API keys
+Week 2: Add an async task queue so long tasks don't block the HTTP response
+Week 2: Add secret management, no hardcoded API keys
 Week 3: (Optional) Run a small model locally with Ollama; compare with API calls on quality and cost
-Week 3: (Optional) Set up LiteLLM for basic model routing — simple tasks go local, complex go API
+Week 3: (Optional) Set up LiteLLM for basic model routing, simple tasks go local, complex go API
 ```

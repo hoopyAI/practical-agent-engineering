@@ -2,7 +2,7 @@
 
 ## Overview
 
-An Agent is not a single pattern — it is a set of composable architecture patterns. You should be able to whiteboard each pattern's flow and explain which scenario calls for which pattern.
+An Agent is not a single pattern. It is a set of composable architecture patterns. You should be able to whiteboard each pattern's flow and explain which scenario calls for which.
 
 ## Five Core Patterns
 
@@ -68,9 +68,9 @@ One orchestrator dynamically decomposes tasks and assigns them to multiple Worke
 | Unpredictable complexity | Orchestrator-Workers | Dynamic division of labor |
 | Cost-sensitive | Plan-and-Execute + small model Executor | Big model plans, small model executes |
 
-## Source Code Study Projects (Key)
+## Source Code Study Projects
 
-### learn-claude-code — Reproduce the Claude Code Architecture from Scratch
+### learn-claude-code: Reproduce the Claude Code Architecture from Scratch
 
 - **Repo**: https://github.com/shareAI-lab/learn-claude-code
 - **Language**: Has Chinese documentation (有中文文档)
@@ -85,7 +85,7 @@ One orchestrator dynamically decomposes tasks and assigns them to multiple Worke
   - s10-s12: Worktree isolation, parallel execution
 - **Recommendation**: Spend 1-2 weeks following along and implementing each module yourself
 
-### Nanobot — 4,000 Lines of Python Reproducing OpenClaw's Core
+### Nanobot: 4,000 Lines of Python Reproducing OpenClaw's Core
 
 - **Repo**: https://github.com/HKUDS/nanobot
 - **Stars**: 26,800+
@@ -103,7 +103,7 @@ One orchestrator dynamically decomposes tasks and assigns them to multiple Worke
 
 ## Supplement: Structured Output
 
-Making the Agent output reliable JSON/schema instead of free text. This is the foundation for tool calling and multi-Agent communication — if the Agent's return format is unreliable, everything downstream breaks.
+Making the Agent output reliable JSON/schema instead of free text. This is the foundation for tool calling and multi-Agent communication. If the Agent's return format is unreliable, everything downstream breaks.
 
 - Anthropic/OpenAI both support `tool_use` / `function_calling` to force JSON output
 - For complex scenarios, use Pydantic/Zod schemas to constrain output structure
@@ -129,7 +129,7 @@ The most common production pitfalls for Agents:
 | [Google Cloud: Choose a Design Pattern for Agentic AI](https://docs.google.com/architecture/choose-design-pattern-agentic-ai-system) | Google's perspective on pattern selection |
 | [Redis: AI Agent Architecture Patterns](https://redis.io/blog/ai-agent-architecture-patterns/) | Single Agent + multi-Agent pattern deep dive |
 | [ReAct vs Plan-and-Execute Deep Dive](https://louisbouchard.substack.com/p/react-vs-plan-and-execute-the-architecture) | In-depth comparison of the two core patterns |
-| [15 Agentic AI Design Patterns (2026)](https://aitoolsclub.com/15-agentic-ai-design-patterns-you-should-know-research-backed-and-emerging-frameworks-2026/) | Full landscape of 15 patterns |
+| [15 Agentic AI Design Patterns (2026)](https://aitoolsclub.com/15-agentic-ai-design-patterns-you-should-know-research-backed-and-emerging-frameworks-2026/) | Catalog of 15 patterns |
 | [AI Agent Architecture: Build Systems That Work (Redis)](https://redis.io/blog/ai-agent-architecture/) | Production-grade architecture guide |
 | [Anthropic Cookbook: Agent Patterns](https://github.com/anthropics/anthropic-cookbook/tree/main/patterns/agents) | Code-level implementation reference |
 

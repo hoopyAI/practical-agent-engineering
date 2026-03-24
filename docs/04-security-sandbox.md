@@ -2,7 +2,7 @@
 
 ## Overview
 
-Agents can run code, call APIs, and write files — and they can also cause damage. A single prompt injection can make an Agent delete a database. In 2026, OWASP published a dedicated Agent Security Top 10.
+Agents can run code, call APIs, and write files. They can also cause damage. A single prompt injection can make an Agent delete a database. In 2026, OWASP published a dedicated Agent Security Top 10.
 
 ## Three-Layer Security Architecture
 
@@ -110,7 +110,7 @@ Each MCP tool gets individually authorized:
 | **HOTL** | Human-on-the-Loop | Supervises; intervenes on anomalies | Medium-risk, medium-frequency |
 | **Full Auto** | — | Not involved | Low-risk, high-frequency |
 
-Most Agent projects start with HITL (confirmation gating). The next step is learning HOTL — the Agent runs autonomously, and humans are notified only when something looks wrong.
+Most Agent projects start with HITL (confirmation gating). The next step is HOTL, where the Agent runs autonomously and humans are notified only when something looks wrong.
 
 ### HOTL Implementation Pattern
 
@@ -156,14 +156,14 @@ Agent executes task
 | [Permit.io: HITL Best Practices](https://www.permit.io/blog/human-in-the-loop-for-ai-agents-best-practices-frameworks-use-cases-and-demo) | Human-Agent collaboration design |
 | [From HITL to HOTL](https://bytebridge.medium.com/from-human-in-the-loop-to-human-on-the-loop-evolving-ai-agent-autonomy-c0ae62c3bf91) | Autonomy evolution |
 | [Security for Production AI Agents 2026](https://iain.so/security-for-production-ai-agents-in-2026) | Production security practices |
-| [Strata: Agentic AI Risks 2026](https://www.strata.io/blog/agentic-identity/a-guide-to-agentic-ai-risks-in-2026/) | Risk landscape |
+| [Strata: Agentic AI Risks 2026](https://www.strata.io/blog/agentic-identity/a-guide-to-agentic-ai-risks-in-2026/) | Risk overview |
 | [OpenClaw Agent Permissions & Safety](https://www.crewclaw.com/blog/openclaw-agent-permissions-safety) | OpenClaw permission model |
 
 ## Practice Plan
 
 1. **Week 1**: Read OWASP Top 10 + Northflank sandbox guide
 2. **Week 1**: Build a basic Docker sandbox for an Agent project (no network + read-only)
-3. **Week 2**: Design a permission model (whiteboard it) — define each tool's permission boundaries
-4. **Week 2**: Implement an approval gateway — high-risk operations pause and wait for human confirmation
+3. **Week 2**: Design a permission model (whiteboard it), defining each tool's permission boundaries
+4. **Week 2**: Implement an approval gateway where high-risk operations pause and wait for human confirmation
 5. **Week 3**: Try E2B or gVisor as a Docker replacement
 6. **Week 3**: Add a complete security layer to a multi-Agent system
