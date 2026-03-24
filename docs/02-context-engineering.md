@@ -2,16 +2,16 @@
 
 ## Overview
 
-Context Engineering is the discipline of systematically managing an Agent's context — deciding what information enters the context window, in what form, and when. In under a year, it went from a niche concept to a core AI engineering skill in 2026.
+Context Engineering is the discipline of systematically managing an Agent's context: deciding what information enters the context window, in what form, and when. In under a year, it went from a niche concept to a core AI engineering skill in 2026.
 
 **Agent performance is 90% determined by context quality.**
 
 ## Why This Is the Hottest Direction in 2026
 
-- The Manus team shared that they rebuilt their Agent framework 4 times — the core challenge every time was context management
+- The Manus team shared that they rebuilt their Agent framework 4 times. The core challenge every time was context management.
 - A single complex tool schema can eat 500+ tokens
 - Connecting multiple MCP Servers can consume 50,000+ tokens before reasoning even begins
-- MCP has 97M+ monthly downloads — more tool connections means the context explosion problem keeps getting worse
+- MCP has 97M+ monthly downloads, so more tool connections means the context explosion problem keeps getting worse
 
 ## Core Sub-Skills
 
@@ -42,14 +42,14 @@ Like an operating system's memory hierarchy:
 
 ### 3. Tool Schema Compression
 
-- Simplify parameter descriptions: good enough is good enough — don't write essays
+- Simplify parameter descriptions. Good enough is good enough; don't write essays.
 - Use enums to constrain values: reduces Agent errors and description length
 - Grouped loading: only load tool subsets relevant to the current task type
 - Cache hot schemas: cache parsing results for high-frequency tools
 
 ### 4. Agentic Context Engineering (ACE)
 
-Self-evolving context — the Agent updates its own context templates based on execution feedback. Information that proves useful is retained; redundant information is pruned. Like a continuously self-optimizing playbook.
+Self-evolving context. The Agent updates its own context templates based on execution feedback. Information that proves useful is retained; redundant information is pruned. Think of it as a continuously self-optimizing playbook.
 
 ### 5. Agentic Graph RAG
 
@@ -69,9 +69,9 @@ Agent reasoning + knowledge graphs. Not just vector search, but reasoning and tr
 
 | Resource | Description |
 |----------|-------------|
-| [Manus: Context Engineering for AI Agents](https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus) | **Most important** — real-world lessons from rebuilding their framework 4 times |
+| [Manus: Context Engineering for AI Agents](https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus) | **Start here.** Real-world lessons from rebuilding their framework 4 times |
 | [Martin Fowler: Context Engineering for Coding Agents](https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html) | A software engineering perspective |
-| [State of Context Engineering 2026](https://www.newsletter.swirlai.com/p/state-of-context-engineering-in-2026) | Industry landscape overview |
+| [State of Context Engineering 2026](https://www.newsletter.swirlai.com/p/state-of-context-engineering-in-2026) | Industry overview |
 | [arxiv: Context Engineering for AI Agents in OSS](https://arxiv.org/abs/2510.21413) | Academic paper |
 | [arxiv: Agentic Context Engineering (ACE)](https://arxiv.org/abs/2510.04618) | ACE methodology paper |
 | [Mem0: Production-Ready Long-Term Memory](https://arxiv.org/pdf/2504.19413) | Mem0 technical paper |
@@ -83,7 +83,7 @@ Agent reasoning + knowledge graphs. Not just vector search, but reasoning and tr
 
 ## Agentic RAG: Combining Agents with Retrieval
 
-RAG hasn't become obsolete in 2026 — it has evolved. Traditional RAG is a fixed pipeline (query -> retrieve -> generate). Agentic RAG lets the Agent autonomously decide when to retrieve, what to retrieve, and whether to do multiple retrieval rounds.
+RAG hasn't become obsolete in 2026. It has evolved. Traditional RAG is a fixed pipeline (query -> retrieve -> generate). Agentic RAG lets the Agent autonomously decide when to retrieve, what to retrieve, and whether to do multiple retrieval rounds.
 
 | | Traditional RAG | Agentic RAG |
 |---|----------------|-------------|
@@ -105,7 +105,7 @@ RAG hasn't become obsolete in 2026 — it has evolved. Traditional RAG is a fixe
 ## Practice Plan
 
 1. **Week 1**: Read the Manus blog post + Martin Fowler article; internalize core concepts
-2. **Week 1**: Calculate the token distribution of a real Agent call; identify the biggest consumption hotspot
+2. **Week 1**: Calculate the token distribution of a real Agent call; find where most tokens go
 3. **Week 2**: Add long-term memory to a project using Mem0 (remember user preferences)
-4. **Week 2**: Experiment with tool schema compression — simplify descriptions and measure impact on Agent performance
-5. **Week 3**: Design a context self-evolution mechanism — the Agent automatically prunes useless context
+4. **Week 2**: Try tool schema compression. Simplify descriptions and measure impact on Agent accuracy.
+5. **Week 3**: Design a context self-evolution mechanism where the Agent automatically prunes useless context
