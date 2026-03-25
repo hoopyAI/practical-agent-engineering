@@ -17,7 +17,7 @@ Most "awesome" lists give you 200 links and no direction. This guide gives you:
 ## Learning Map
 
 <p align="center">
-  <img src="assets/learningmap.svg" alt="Learning Map" width="800" />
+  <img src="assets/learning-map.svg" alt="Learning Map" width="800" />
 </p>
 
 ## Learning Strategy
