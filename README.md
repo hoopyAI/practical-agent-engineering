@@ -16,26 +16,9 @@ Most "awesome" lists give you 200 links and no direction. This guide gives you:
 
 ## Learning Map
 
-```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '14px', 'fontFamily': 'Georgia, serif', 'lineColor': '#94a3b8', 'primaryColor': '#f8fafc', 'primaryBorderColor': '#cbd5e1' }}}%%
-
-flowchart LR
-    S((" ")):::dot --> A["Architecture\nPatterns"]:::node
-    S --> B["Context\nEngineering"]:::node
-    A --> C["Multi-Agent"]:::node
-    B --> C
-    A --> D["Security"]:::node
-    C --> E["Eval &\nObservability"]:::node
-    D --> E
-    E --> F["Deployment"]:::node
-
-    classDef dot fill:#475569,stroke:#475569,color:#475569
-    classDef node fill:#f8fafc,stroke:#e2e8f0,stroke-width:1.5px,color:#1e293b
-
-    linkStyle default stroke:#cbd5e1,stroke-width:1.5px
-```
-
-> `START` ➜ Architecture & Context ➜ Multi-Agent & Security ➜ Eval ➜ Deploy
+<p align="center">
+  <img src="assets/learningmap.svg" alt="Learning Map" width="800" />
+</p>
 
 ## Learning Strategy
 
