@@ -6,6 +6,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
+**English | [中文](README.zh.md)**
+
 ## Why This Guide
 
 Most "awesome" lists give you 200 links and no direction. This guide gives you:
