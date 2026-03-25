@@ -39,12 +39,12 @@ Two projects that teach you everything at once:
 
 | # | Topic | Covered by Step 1? | What to learn next | Guide |
 |---|-------|--------------------|--------------------|-------|
-| 1 | [Architecture Patterns](docs/01-architecture-patterns.md) | Agent Loop basics | ReAct vs Plan-Execute, pattern selection, structured output, reliability | [Read ->](docs/01-architecture-patterns.md) |
-| 2 | [Context Engineering](docs/02-context-engineering.md) | Context isolation | Hierarchical memory, token budgets, Agentic RAG, self-evolving context | [Read ->](docs/02-context-engineering.md) |
-| 3 | [Multi-Agent Patterns](docs/03-multi-agent-patterns.md) | Subagent, Teams | Pipeline/LangGraph, Swarm/Handoff, when NOT to use A2A | [Read ->](docs/03-multi-agent-patterns.md) |
-| 4 | [Security & Sandboxing](docs/04-security-sandbox.md) | Permission governance | Firecracker/gVisor, OWASP Agent Top 10, HITL to HOTL | [Read ->](docs/04-security-sandbox.md) |
-| 5 | [Evaluation & Observability](docs/05-eval-and-observability.md) | Not covered | Anthropic's eval framework, LLM-as-Judge, tracing, cost monitoring | [Read ->](docs/05-eval-and-observability.md) |
-| 6 | [Deployment](docs/06-deployment.md) | Not covered | Containerization, platforms, vLLM, hybrid model routing | [Read ->](docs/06-deployment.md) |
+| 1 | Architecture Patterns | Agent Loop basics | ReAct vs Plan-Execute, structured output, reliability | [EN](docs/01-architecture-patterns.md) · [中文](docs/zh/01-architecture-patterns.md) |
+| 2 | Context Engineering | Context isolation | Hierarchical memory, token budgets, Agentic RAG | [EN](docs/02-context-engineering.md) · [中文](docs/zh/02-context-engineering.md) |
+| 3 | Multi-Agent Patterns | Subagent, Teams | Pipeline/LangGraph, Swarm/Handoff | [EN](docs/03-multi-agent-patterns.md) · [中文](docs/zh/03-multi-agent-patterns.md) |
+| 4 | Security & Sandboxing | Permission governance | Firecracker/gVisor, OWASP, HITL → HOTL | [EN](docs/04-security-sandbox.md) · [中文](docs/zh/04-security-sandbox.md) |
+| 5 | Eval & Observability | Not covered | Evals, LLM-as-Judge, tracing, cost monitoring | [EN](docs/05-eval-and-observability.md) · [中文](docs/zh/05-eval-and-observability.md) |
+| 6 | Deployment | Not covered | Docker, platforms, vLLM, hybrid routing | [EN](docs/06-deployment.md) · [中文](docs/zh/06-deployment.md) |
 
 ### Quick Framework Reference
 
