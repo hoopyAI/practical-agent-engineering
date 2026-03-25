@@ -22,7 +22,7 @@ Most "awesome" lists give you 200 links and no direction. This guide gives you:
 
 ## Learning Strategy
 
-**Start with a complete project, then go deep on each skill.**
+**Start with a complete project, then go deep on each topic.**
 
 ### Step 1: Build an Agent from Scratch (3-4 weeks)
 
@@ -33,9 +33,9 @@ Two projects that teach you everything at once:
 | [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) | 12-lesson course: agent loop, tools, context, subagents, teams, permissions | 2-3 weeks |
 | [Nanobot](https://github.com/HKUDS/nanobot) | Read a complete agent in 4,000 lines: memory, tools, multi-model support | 2-3 days |
 
-### Step 2: Go Deep on Each Skill
+### Step 2: Go Deep on Each Topic
 
-| # | Skill | Covered by Step 1? | What to learn next | Guide |
+| # | Topic | Covered by Step 1? | What to learn next | Guide |
 |---|-------|--------------------|--------------------|-------|
 | 1 | [Architecture Patterns](docs/01-architecture-patterns.md) | Agent Loop basics | ReAct vs Plan-Execute, pattern selection, structured output, reliability | [Read ->](docs/01-architecture-patterns.md) |
 | 2 | [Context Engineering](docs/02-context-engineering.md) | Context isolation | Hierarchical memory, token budgets, Agentic RAG, self-evolving context | [Read ->](docs/02-context-engineering.md) |
