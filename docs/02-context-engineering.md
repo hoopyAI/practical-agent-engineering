@@ -2,7 +2,7 @@
 
 ## Overview
 
-Context Engineering is the discipline of systematically managing an Agent's context: deciding what information enters the context window, in what form, and when. In under a year, it went from a niche concept to a core AI engineering skill in 2026.
+Context Engineering is the discipline of systematically managing an Agent's context: deciding what information enters the context window, in what form, and when. In under a year, it went from a niche concept to a core AI engineering discipline in 2026.
 
 **Agent performance is 90% determined by context quality.**
 
@@ -13,7 +13,7 @@ Context Engineering is the discipline of systematically managing an Agent's cont
 - Connecting multiple MCP Servers can consume 50,000+ tokens before reasoning even begins
 - MCP has 97M+ monthly downloads, so more tool connections means the context explosion problem keeps getting worse
 
-## Core Sub-Skills
+## Core Areas
 
 ### 1. Context Budget Management
 
@@ -91,7 +91,7 @@ RAG hasn't become obsolete in 2026. It has evolved. Traditional RAG is a fixed p
 | Flexibility | Static | Dynamic query rewriting, data source switching, sufficiency checks |
 | Suited for | Simple Q&A | Complex multi-step reasoning + knowledge-intensive tasks |
 
-**The skill to develop is not "how to build a RAG pipeline" but "how to make an Agent use retrieval intelligently."**
+**The thing to learn is not "how to build a RAG pipeline" but "how to make an Agent use retrieval intelligently."**
 
 ### Resources
 

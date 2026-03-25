@@ -8,7 +8,7 @@ An Agent engineer doesn't need to be a DevOps expert, but does need to be able t
 
 ### Tier 1: Containerization (Must Learn)
 
-The most fundamental skill. Every Agent project should be buildable as a Docker image.
+The most fundamental requirement. Every Agent project should be buildable as a Docker image.
 
 ```dockerfile
 FROM node:22-slim
