@@ -39,12 +39,12 @@
 
 | # | 方向 | 主干项目覆盖了？ | 需要额外深入 | 详情 |
 |---|------|-----------------|------------|------|
-| 1 | [架构模式](docs/01-architecture-patterns.md) | Agent Loop 基础 | ReAct vs Plan-Execute、模式选型、结构化输出、可靠性 | [阅读 →](docs/01-architecture-patterns.md) |
-| 2 | [Context Engineering](docs/02-context-engineering.md) | Context 隔离 | 分层记忆、token 预算、Agentic RAG、自进化 context | [阅读 →](docs/02-context-engineering.md) |
-| 3 | [多 Agent 模式](docs/03-multi-agent-patterns.md) | Subagent、Teams | Pipeline/LangGraph、Swarm/Handoff、什么时候不要用 A2A | [阅读 →](docs/03-multi-agent-patterns.md) |
-| 4 | [安全与沙箱](docs/04-security-sandbox.md) | 权限治理 | Firecracker/gVisor、OWASP Agent Top 10、HITL → HOTL | [阅读 →](docs/04-security-sandbox.md) |
-| 5 | [评估与可观测](docs/05-eval-and-observability.md) | 未覆盖 | Anthropic 评估框架、LLM-as-Judge、追踪、成本监控 | [阅读 →](docs/05-eval-and-observability.md) |
-| 6 | [部署](docs/06-deployment.md) | 未覆盖 | 容器化、平台选型、vLLM、混合模型路由 | [阅读 →](docs/06-deployment.md) |
+| 1 | 架构模式 | Agent Loop 基础 | ReAct vs Plan-Execute、结构化输出、可靠性 | [中文](docs/zh/01-architecture-patterns.md) · [EN](docs/01-architecture-patterns.md) |
+| 2 | Context Engineering | Context 隔离 | 分层记忆、token 预算、Agentic RAG | [中文](docs/zh/02-context-engineering.md) · [EN](docs/02-context-engineering.md) |
+| 3 | 多 Agent 模式 | Subagent、Teams | Pipeline/LangGraph、Swarm/Handoff | [中文](docs/zh/03-multi-agent-patterns.md) · [EN](docs/03-multi-agent-patterns.md) |
+| 4 | 安全与沙箱 | 权限治理 | Firecracker/gVisor、OWASP、HITL → HOTL | [中文](docs/zh/04-security-sandbox.md) · [EN](docs/04-security-sandbox.md) |
+| 5 | 评估与可观测 | 未覆盖 | Evals、LLM-as-Judge、追踪、成本监控 | [中文](docs/zh/05-eval-and-observability.md) · [EN](docs/05-eval-and-observability.md) |
+| 6 | 部署 | 未覆盖 | Docker、平台选型、vLLM、混合路由 | [中文](docs/zh/06-deployment.md) · [EN](docs/06-deployment.md) |
 
 ### 框架速查
 
